@@ -1,0 +1,385 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+$color-dark-gold: #8e6b00;
+$color-gold: #c99200;
+$color-black: #0d0a00;
+$color-tierra: #292310;
+$color-beige: #fbedc3;
+$color-blanco: #fff;
+
+.bg-dark {
+    background-color: $color-black !important;
+  }
+  
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-image: url("../assets/fondo-geometrico.jpg");
+    background-repeat: repeat;
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+h1 {
+  font-family: "Julius Sans One", sans-serif;
+  color: $color-dark-gold;
+  font-size: 55px;
+  margin-bottom: 1.5em;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Julius Sans One", sans-serif;
+  color: $color-dark-gold;
+  font-size: 44px;
+  margin-bottom: 1.5em;
+  font-weight: 900;
+}
+
+h3 {
+  font-family: "Julius Sans One", sans-serif;
+  color: $color-dark-gold;
+  font-size: 36px;
+  margin-bottom: 1em;
+}
+
+h4 {
+    font-family: "Julius Sans One", sans-serif;
+    color: $color-gold;
+    font-size: 30px;
+    margin-bottom: 1em;
+  }
+  
+h5 {
+    font-family: "Julius Sans One", sans-serif;
+    color: $color-gold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-bottom: 1em;
+  }
+
+  /* Header Style */
+
+  .logoElena {
+    width: 250px;
+  }
+  
+  .logoElenaMobile {
+    width: 150px;
+  }
+
+ header {
+  box-shadow: 1px 20px 30px -20px rgba(0,0,0,0.8);
+  nav li {
+      margin: 0px 30px;
+&#activo{
+  margin-bottom: -1px;
+          border-bottom: solid 1px $color-gold;
+}
+
+      &:hover {
+        margin-bottom: -1px;
+          border-bottom: solid 1px $color-gold;
+      }
+
+      a {
+          font-family: "Julius Sans One", sans-serif;
+          color: $color-beige !important;
+
+          &:hover {
+              color: $color-gold !important; 
+          }
+      } 
+  }
+}
+
+/* Home Slider */
+
+.homeSlider {
+  box-shadow: 1px 20px 30px -20px rgba(0,0,0,0.8);
+}
+
+/* Texto Bienvenida */
+.seccionBienvenida {
+  flex: content;
+  align-content: center;
+.bienvenida {
+padding: 3em;
+margin-top: 3em;
+margin-bottom: 0;
+margin-left: 1em;
+margin-right: 1em;
+
+h2 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+  p {
+    text-align: center;
+    font-size: 21px;
+  }
+}
+}
+
+/* Home Platos Destacados */
+
+.destacadosHome {
+margin-bottom: 3em;
+.platoDestacado {
+  background-color: $color-blanco;
+  padding: 3em;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 120px;
+  img {
+    margin-top: -120px;
+  }
+}
+}
+
+/* Footer */
+
+footer {
+  h5 {
+    margin-top: 5px;
+  }
+}
+
+.logoFooter {
+  width: 150px;
+  margin-bottom: 3em;
+}
+
+
+.i-footer {
+  font-size: 2rem;
+  margin: 0px 5px;
+  color: $color-gold;
+  &:hover{
+    color: $color-blanco;
+  }
+}
+
+.copyRight {
+  border-top: solid 1px $color-gold;
+}
+
+.menuImage {
+  width: 100%; 
+}
+
+.menuFilas {
+  margin-bottom: 3em;
+}
+
+.menuColumnaImg {
+  background-image: url(../assets/menu-entrada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 200px;
+  width: 100%;
+} 
+
+.menuColumnaImg1 {
+  background-image: url(../assets/menu-almuerzo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 200px;
+  width: 100%;
+} 
+
+.menuColumnaImg2 {
+  background-image: url(../assets/menu-cena.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 200px;
+  width: 100%;
+} 
+
+.menuColumnaImg3 {
+  background-image: url(../assets/menu-postre.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 200px;
+  width: 100%;
+} 
+
+
+.staffColumnaImg {
+  background-image: url(../assets/staff-chef-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 400px;
+  width: 100%;
+} 
+
+.staffColumnaImg1 {
+  background-image: url(../assets/staff-equipo-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 400px;
+  width: 100%;
+} 
+
+.staffColumnaImg2 {
+  background-image: url(../assets/staff-bar-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 400px;
+  width: 100%;
+} 
+
+.menuColumnaTexto {
+  background-color: $color-blanco;
+  padding: 3em;
+  text-align: left;
+}
+
+  table {
+    width: 100%;
+    .tableHead {
+      font-weight: 600;
+      line-height: 3;
+    }
+    .precio {
+      width: 30%;
+    }
+    .tableColLfet  {
+      width: 70%;
+    }
+}
+
+/* GRID - GALERIA */
+
+
+.galeriaPlatos {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(12,1fr);
+  grid-gap: 10px;
+  margin: auto;
+  grid-template-areas: 
+"plato1" "plato2" "plato3" "plato4"  
+"plato5" "plato6" "plato7" "plato8"
+"plato9" "plato10" "plato11" "plato12";
+}
+
+.galeriaPlatos>img {
+  width: 1fr;
+  height: 1fr;
+}
+
+img.pl {
+  width: 100%;
+}  
+
+@media only screen and (min-width: 768px) {
+.galeriaPlatos {
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(6,1fr);
+}
+}
+
+@media only screen and (min-width: 1024px) {
+.galeriaPlatos {
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+}
+
+
+/*Formulario Contacto*/
+
+.formContainer {
+  background-color: #fff;
+  margin: 1.5em;
+  padding: 3em;
+  flex-grow: 1;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.infoContainer {
+  background-color: #fff;
+  margin: 1.5em;
+  padding: 3em;
+  flex-grow: 2;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  
+}
+
+.infoContacto {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.form-label {
+  color: $color-dark-gold;
+  display: block;
+}
+
+.form-label-promo {
+  display: inline;
+}
+
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+  border-color: $color-gold;
+  border-style: none none solid none;
+  width: 100%;
+  font-size: 1.25em;
+}
+
+.btn-enviar {
+  font-size: 1em;
+  background-color: $color-gold;
+  color: #fff;
+  border-radius: 0;
+  padding: 10px 50px;
+  border-style: none;
+}
+
+.btn-enviar:hover {
+  background-color: $color-dark-gold;
+}
+
+textarea {
+  resize: none;
+}
+
+.i-contacto {
+  font-size: 1rem;
+  margin: 5px;
+  color: $color-dark-gold;
+}
+
+.bulletsContacto {
+padding-top: 20px;
+padding-bottom: 20px;
+} 

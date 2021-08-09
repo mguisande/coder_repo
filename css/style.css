@@ -1,0 +1,390 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bg-dark {
+  background-color: #0d0a00 !important;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-image: url("../assets/fondo-geometrico.jpg");
+  background-repeat: repeat;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Julius Sans One", sans-serif;
+  color: #8e6b00;
+  font-size: 55px;
+  margin-bottom: 1.5em;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Julius Sans One", sans-serif;
+  color: #8e6b00;
+  font-size: 44px;
+  margin-bottom: 1.5em;
+  font-weight: 900;
+}
+
+h3 {
+  font-family: "Julius Sans One", sans-serif;
+  color: #8e6b00;
+  font-size: 36px;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-family: "Julius Sans One", sans-serif;
+  color: #c99200;
+  font-size: 30px;
+  margin-bottom: 1em;
+}
+
+h5 {
+  font-family: "Julius Sans One", sans-serif;
+  color: #c99200;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-bottom: 1em;
+}
+
+/* Header Style */
+.logoElena {
+  width: 250px;
+}
+
+.logoElenaMobile {
+  width: 150px;
+}
+
+header {
+  -webkit-box-shadow: 1px 20px 30px -20px rgba(0, 0, 0, 0.8);
+          box-shadow: 1px 20px 30px -20px rgba(0, 0, 0, 0.8);
+}
+
+header nav li {
+  margin: 0px 30px;
+}
+
+header nav li#activo {
+  margin-bottom: -1px;
+  border-bottom: solid 1px #c99200;
+}
+
+header nav li:hover {
+  margin-bottom: -1px;
+  border-bottom: solid 1px #c99200;
+}
+
+header nav li a {
+  font-family: "Julius Sans One", sans-serif;
+  color: #fbedc3 !important;
+}
+
+header nav li a:hover {
+  color: #c99200 !important;
+}
+
+/* Home Slider */
+.homeSlider {
+  -webkit-box-shadow: 1px 20px 30px -20px rgba(0, 0, 0, 0.8);
+          box-shadow: 1px 20px 30px -20px rgba(0, 0, 0, 0.8);
+}
+
+/* Texto Bienvenida */
+.seccionBienvenida {
+  -webkit-box-flex: content;
+      -ms-flex: content;
+          flex: content;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.seccionBienvenida .bienvenida {
+  padding: 3em;
+  margin-top: 3em;
+  margin-bottom: 0;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.seccionBienvenida .bienvenida h2 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.seccionBienvenida .bienvenida p {
+  text-align: center;
+  font-size: 21px;
+}
+
+/* Home Platos Destacados */
+.destacadosHome {
+  margin-bottom: 3em;
+}
+
+.destacadosHome .platoDestacado {
+  background-color: #fff;
+  padding: 3em;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 120px;
+}
+
+.destacadosHome .platoDestacado img {
+  margin-top: -120px;
+}
+
+/* Footer */
+footer h5 {
+  margin-top: 5px;
+}
+
+.logoFooter {
+  width: 150px;
+  margin-bottom: 3em;
+}
+
+.i-footer {
+  font-size: 2rem;
+  margin: 0px 5px;
+  color: #c99200;
+}
+
+.i-footer:hover {
+  color: #fff;
+}
+
+.copyRight {
+  border-top: solid 1px #c99200;
+}
+
+.menuImage {
+  width: 100%;
+}
+
+.menuFilas {
+  margin-bottom: 3em;
+}
+
+.menuColumnaImg {
+  background-image: url(../assets/menu-entrada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 200px;
+  width: 100%;
+}
+
+.menuColumnaImg1 {
+  background-image: url(../assets/menu-almuerzo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 200px;
+  width: 100%;
+}
+
+.menuColumnaImg2 {
+  background-image: url(../assets/menu-cena.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 200px;
+  width: 100%;
+}
+
+.menuColumnaImg3 {
+  background-image: url(../assets/menu-postre.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 200px;
+  width: 100%;
+}
+
+.staffColumnaImg {
+  background-image: url(../assets/staff-chef-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 400px;
+  width: 100%;
+}
+
+.staffColumnaImg1 {
+  background-image: url(../assets/staff-equipo-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 400px;
+  width: 100%;
+}
+
+.staffColumnaImg2 {
+  background-image: url(../assets/staff-bar-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 3em;
+  min-height: 400px;
+  width: 100%;
+}
+
+.menuColumnaTexto {
+  background-color: #fff;
+  padding: 3em;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+}
+
+table .tableHead {
+  font-weight: 600;
+  line-height: 3;
+}
+
+table .precio {
+  width: 30%;
+}
+
+table .tableColLfet {
+  width: 70%;
+}
+
+/* GRID - GALERIA */
+.galeriaPlatos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  grid-gap: 10px;
+  margin: auto;
+      grid-template-areas: "plato1" "plato2" "plato3" "plato4"   "plato5" "plato6" "plato7" "plato8" "plato9" "plato10" "plato11" "plato12";
+}
+
+.galeriaPlatos > img {
+  width: 1fr;
+  height: 1fr;
+}
+
+img.pl {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .galeriaPlatos {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .galeriaPlatos {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+/*Formulario Contacto*/
+.formContainer {
+  background-color: #fff;
+  margin: 1.5em;
+  padding: 3em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.infoContainer {
+  background-color: #fff;
+  margin: 1.5em;
+  padding: 3em;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.infoContacto {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.form-label {
+  color: #8e6b00;
+  display: block;
+}
+
+.form-label-promo {
+  display: inline;
+}
+
+.form-control {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  border-color: #c99200;
+  border-style: none none solid none;
+  width: 100%;
+  font-size: 1.25em;
+}
+
+.btn-enviar {
+  font-size: 1em;
+  background-color: #c99200;
+  color: #fff;
+  border-radius: 0;
+  padding: 10px 50px;
+  border-style: none;
+}
+
+.btn-enviar:hover {
+  background-color: #8e6b00;
+}
+
+textarea {
+  resize: none;
+}
+
+.i-contacto {
+  font-size: 1rem;
+  margin: 5px;
+  color: #8e6b00;
+}
+
+.bulletsContacto {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */

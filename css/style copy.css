@@ -1,0 +1,340 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-image: url("../assets/fondo-geometrico.jpg");
+  background-repeat: repeat;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #a57c00;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #a57c00;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #a57c00;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.pageTitle {
+  text-align: center;
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff00);
+  padding: 20px;
+}
+
+.frase {
+  text-align: center;
+  margin: 50px;
+}
+
+.destacado {
+  text-align: center;
+  padding: 30px;
+  margin: 1.5%;
+  background-color: #fff;
+  border: solid 5px #f2f2f2;
+  border-radius: 20px;
+}
+
+.destacado:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease-in-out;
+}
+
+.itemInfoContacto {
+  margin-bottom: 10px;
+}
+
+.imgMenu {
+  width: 100%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border: solid 4px rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.platoGal {
+  border-radius: 20px;
+}
+
+/* BOOTSTRAP PERSONALIZADO*/
+
+.cardsDestacados {
+  margin: 3em;
+}
+
+.btn.btn-primary {
+  background-color: orangered;
+  border-color: rgb(153, 41, 0);
+}
+
+.btn.btn-primary:hover {
+  background-color: rgb(153, 41, 0);
+  border-color: rgb(153, 41, 0);
+}
+
+.bg-dark {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.navbar-brand {
+  font-size: xx-large;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+}
+
+/*Formulario Contacto*/
+
+.formContainer {
+  background-color: #fff;
+  margin: 1.5em;
+  padding: 3em;
+  flex-grow: 1;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.infoContainer {
+  background-color: #fff;
+  margin: 1.5em;
+  padding: 3em;
+  flex-grow: 2;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  
+}
+
+.infoContacto {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.form-label {
+  color: orangered;
+  display: block;
+}
+
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+  border-color: #ccc;
+  border-style: none none solid none;
+  width: 100%;
+  font-size: 1.25em;
+}
+
+.btn-enviar {
+  font-size: 1em;
+  background-color: orangered;
+  color: #fff;
+  border-radius: 0;
+  padding: 10px 50px;
+  border-style: none;
+}
+
+.btn-enviar:hover {
+  background-color: rgb(153, 41, 0);
+}
+
+textarea {
+  resize: none;
+}
+
+/* Estilos Desafio Flex Box*/
+
+.seccionDestacado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.seccionContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch; 
+}
+
+.seccionMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; 
+  margin: 1em;
+}
+
+.menuContainer {
+  margin: 2em;
+}
+
+.zocaloFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(153, 41, 0);
+  background-image: linear-gradient(to bottom, rgb(153, 41, 0), orangered);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.columnFooter {
+  text-align: center;
+  color: #fff;
+  margin: 1.5%;
+}
+
+.i-contacto {
+  font-size: 1rem;
+  margin: 5px;
+  color: orangered;
+}
+
+.i-footer {
+  font-size: 2rem;
+  margin: 5px;
+  color: #fff;
+}
+
+img#imgDest {
+  max-width: 200px;
+}
+
+/* Formato Menu - con Flex Box */
+
+ul, ol {
+  list-style: none;
+}
+
+.menuPrincipal li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 10px 30px;
+}
+
+a#logo {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.menuPrincipal li a:hover {
+  color: #fff;
+  background-color: rgb(153, 41, 0);
+  border-radius: 20px;
+}
+
+#activo {
+  color: #fff !important;
+  background-color: orangered;
+  border-radius: 20px;
+}
+
+.menuPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+
+nav {
+  background-color: #fff;
+}
+
+a:hover#logo {
+  background-color: rgb(255, 255, 255);
+}
+
+.logoElena {
+  width: 250px;
+}
+
+.logoElenaMobile {
+  width: 150px;
+}
+
+/* GRID - GALERIA */
+
+
+.galeriaPlatos {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(12,1fr);
+  grid-gap:1rem;
+  margin: 1.5em;
+  grid-template-areas: 
+"plato1" "plato2" "plato3" "plato4"  
+"plato5" "plato6" "plato7" "plato8"
+"plato9" "plato10" "plato11" "plato12";
+}
+
+.galeriaPlatos>img {
+  width: 1fr;
+  height: 1fr;
+}
+
+img.pl {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+
+}  
+
+@media only screen and (min-width: 768px) {
+.galeriaPlatos {
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(6,1fr);
+}
+}
+
+@media only screen and (min-width: 1024px) {
+.galeriaPlatos {
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+}
