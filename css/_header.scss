@@ -1,0 +1,40 @@
+/* Header */
+
+.logoLuccaMobile {
+    width: 150px;
+  }
+  
+  header {
+    box-shadow: 1px 20px 30px -20px rgba(0, 0, 0, 0.8);
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .logoLucca {
+      width: 250px;
+      margin: 0px 50px;
+    }
+  
+    nav li {
+      width: 120px;
+      margin: 0px 20px;
+      text-align: center;
+      &#activo {
+        margin-bottom: -1px;
+        border-bottom: solid 1px $color-gold;
+      }
+  
+      &:hover {
+        margin-bottom: -1px;
+        border-bottom: solid 1px $color-gold;
+      }
+    }
+  }
+  
+  a {
+    font-family: "Julius Sans One", sans-serif;
+    color: $color-beige !important;
+  
+    &:hover {
+      color: $color-gold !important;
+    }
+  }

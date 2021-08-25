@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Estilos Generales */
 * {
   margin: 0px;
   padding: 0px;
@@ -8,8 +10,8 @@
 }
 
 body {
-  font-family: 'Cormorant Garamond', serif;
-  background-image: url("../assets/fondo-geometrico.jpg");
+  font-family: "Cormorant Garamond", serif;
+  background-image: url("../assets/fondoGeometrico.jpg");
   background-repeat: repeat;
 }
 
@@ -18,11 +20,17 @@ p {
   font-weight: 400;
 }
 
+a {
+  color: #8e6b00;
+  text-decoration: none;
+}
+
 h1 {
   font-family: "Julius Sans One", sans-serif;
   color: #8e6b00;
   font-size: 55px;
-  margin-bottom: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
   font-weight: 900;
 }
 
@@ -44,24 +52,34 @@ h3 {
 h4 {
   font-family: "Julius Sans One", sans-serif;
   color: #c99200;
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 1em;
 }
 
 h5 {
   font-family: "Julius Sans One", sans-serif;
-  color: #c99200;
+  color: #8e6b00;
   font-size: 24px;
-  margin-bottom: 20px;
   margin-bottom: 1em;
 }
 
-/* Header Style */
-.logoElena {
-  width: 250px;
+.subtitle {
+  font-family: "Julius Sans One", sans-serif;
+  color: #292310;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-bottom: 1em;
+  text-transform: uppercase;
 }
 
-.logoElenaMobile {
+hr {
+  border-bottom: 2px solid #292310;
+  opacity: 1;
+  width: 40px;
+}
+
+/* Header */
+.logoLuccaMobile {
   width: 150px;
 }
 
@@ -70,84 +88,46 @@ header {
           box-shadow: 1px 20px 30px -20px rgba(0, 0, 0, 0.8);
 }
 
-header nav li {
-  margin: 0px 30px;
+@media only screen and (min-width: 992px) {
+  .logoLucca {
+    width: 250px;
+    margin: 0px 50px;
+  }
+  nav li {
+    width: 120px;
+    margin: 0px 20px;
+    text-align: center;
+  }
+  nav li#activo {
+    margin-bottom: -1px;
+    border-bottom: solid 1px #c99200;
+  }
+  nav li:hover {
+    margin-bottom: -1px;
+    border-bottom: solid 1px #c99200;
+  }
 }
 
-header nav li#activo {
-  margin-bottom: -1px;
-  border-bottom: solid 1px #c99200;
-}
-
-header nav li:hover {
-  margin-bottom: -1px;
-  border-bottom: solid 1px #c99200;
-}
-
-header nav li a {
+a {
   font-family: "Julius Sans One", sans-serif;
   color: #fbedc3 !important;
 }
 
-header nav li a:hover {
+a:hover {
   color: #c99200 !important;
 }
 
-/* Home Slider */
-.homeSlider {
-  -webkit-box-shadow: 1px 20px 30px -20px rgba(0, 0, 0, 0.8);
-          box-shadow: 1px 20px 30px -20px rgba(0, 0, 0, 0.8);
-}
-
-/* Texto Bienvenida */
-.seccionBienvenida {
-  -webkit-box-flex: content;
-      -ms-flex: content;
-          flex: content;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.seccionBienvenida .bienvenida {
-  padding: 2em;
-  margin-top: 2em;
-  margin-bottom: 0;
-}
-
-.seccionBienvenida .bienvenida h2 {
-  text-align: center;
-  margin-bottom: 0.5em;
-}
-
-.seccionBienvenida .bienvenida p {
-  text-align: center;
-  font-size: 21px;
-}
-
-/* Home Platos Destacados */
-.destacadosHome {
-  margin-bottom: 3em;
-}
-
-.destacadosHome .platoDestacado {
-  background-color: #fff;
-  padding: 3em;
-  text-align: center;
-  margin-bottom: 2em;
-  margin-top: 120px;
-}
-
-.destacadosHome .platoDestacado img {
-  margin-top: -120px;
-}
-
 /* Footer */
+footer {
+  margin-top: 2em;
+}
+
 footer h5 {
   margin-top: 5px;
 }
 
 .logoFooter {
-  width: 150px;
+  width: 200px;
   margin-bottom: 3em;
 }
 
@@ -162,9 +142,98 @@ footer h5 {
 }
 
 .copyRight {
-  border-top: solid 1px #c99200;
+  border-top: solid 1px #292310;
 }
 
+/* Home Slider */
+.homeSlider {
+  -webkit-box-shadow: 1px 20px 30px -20px rgba(0, 0, 0, 0.8);
+          box-shadow: 1px 20px 30px -20px rgba(0, 0, 0, 0.8);
+}
+
+#carouselExampleIndicators .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 50vh;
+  overflow: hidden;
+}
+
+/* Texto Bienvenida */
+.seccionBienvenida {
+  -webkit-box-flex: content;
+      -ms-flex: content;
+          flex: content;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.seccionBienvenida .bienvenida {
+  padding: 2em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.seccionBienvenida .bienvenida h2 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.seccionBienvenida .bienvenida p {
+  font-size: 21px;
+}
+
+.separadorBienvenida {
+  width: 300px;
+}
+
+/* Home Platos Destacados */
+.tituloPlatos {
+  text-align: center;
+}
+
+.destacadosHome {
+  margin-bottom: 3em;
+}
+
+.destacadosHome .platoDestacado {
+  background-color: #fff;
+  padding: 3em;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 120px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.destacadosHome .platoDestacado:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.destacadosHome .platoDestacado img {
+  margin-top: -120px;
+}
+
+.btn-outline-primary {
+  font-weight: 600;
+  color: #8e6b00;
+  border: solid 1px #8e6b00;
+  border-radius: 0px;
+  margin-top: 30px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #8e6b00;
+  border: solid 1px #8e6b00;
+}
+
+/* Estilos Páginas Menu / Staff  */
 .menuImage {
   width: 100%;
 }
@@ -174,7 +243,7 @@ footer h5 {
 }
 
 .menuColumnaImg {
-  background-image: url(../assets/menu-entrada.jpg);
+  background-image: url(../assets/menuEntrada.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -184,7 +253,7 @@ footer h5 {
 }
 
 .menuColumnaImg1 {
-  background-image: url(../assets/menu-almuerzo.jpg);
+  background-image: url(../assets/menuAlmuerzo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -194,7 +263,7 @@ footer h5 {
 }
 
 .menuColumnaImg2 {
-  background-image: url(../assets/menu-cena.jpg);
+  background-image: url(../assets/menuCena.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -204,7 +273,7 @@ footer h5 {
 }
 
 .menuColumnaImg3 {
-  background-image: url(../assets/menu-postre.jpg);
+  background-image: url(../assets/menuPostre.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -214,7 +283,7 @@ footer h5 {
 }
 
 .staffColumnaImg {
-  background-image: url(../assets/staff-chef-img.jpg);
+  background-image: url(../assets/staffChefImg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -224,7 +293,7 @@ footer h5 {
 }
 
 .staffColumnaImg1 {
-  background-image: url(../assets/staff-equipo-img.jpg);
+  background-image: url(../assets/staffEquipoImg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -234,7 +303,7 @@ footer h5 {
 }
 
 .staffColumnaImg2 {
-  background-image: url(../assets/staff-bar-img.jpg);
+  background-image: url(../assets/staffBarImg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -259,14 +328,14 @@ table .tableHead {
 }
 
 table .precio {
-  width: 30%;
+  width: 20%;
 }
 
 table .tableColLfet {
-  width: 70%;
+  width: 80%;
 }
 
-/* GRID - GALERIA */
+/* Estilos GRID - GALERIA */
 .galeriaPlatos {
   display: -ms-grid;
   display: grid;
@@ -276,7 +345,7 @@ table .tableColLfet {
       grid-template-rows: repeat(12, 1fr);
   grid-gap: 10px;
   margin: auto;
-      grid-template-areas: "plato1" "plato2" "plato3" "plato4"   "plato5" "plato6" "plato7" "plato8" "plato9" "plato10" "plato11" "plato12";
+      grid-template-areas: "plato1" "plato2" "plato3" "plato4" "plato5" "plato6" "plato7" "plato8" "plato9" "plato10" "plato11" "plato12";
 }
 
 .galeriaPlatos > img {
@@ -384,5 +453,17 @@ textarea {
 .bulletsContacto {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+/* ERROR 404*/
+.samurai {
+  margin-top: 3em;
+  width: 90%;
+}
+
+@media only screen and (min-width: 992px) {
+  .samurai {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+/* Footer */
+
+footer {
+    margin-top: 2em;
+    h5 {
+      margin-top: 5px;
+    }
+  }
+  
+  .logoFooter {
+    width: 200px;
+    margin-bottom: 3em;
+  }
+  
+  .i-footer {
+    font-size: 2rem;
+    margin: 0px 5px;
+    color: $color-gold;
+    &:hover {
+      color: $color-blanco;
+    }
+  }
+  
+  .copyRight {
+    border-top: solid 1px $color-tierra;
+  }

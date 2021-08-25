@@ -1,3 +1,5 @@
+/* Estilos Generales */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -11,26 +13,31 @@ $color-beige: #fbedc3;
 $color-blanco: #fff;
 
 .bg-dark {
-    background-color: $color-black !important;
-  }
-  
+  background-color: $color-black !important;
+}
 
 body {
-    font-family: 'Cormorant Garamond', serif;
-    background-image: url("../assets/fondo-geometrico.jpg");
-    background-repeat: repeat;
-  }
-  
-  p {
-    font-size: 16px;
-    font-weight: 400;
-  }
+  font-family: "Cormorant Garamond", serif;
+  background-image: url("../assets/fondoGeometrico.jpg");
+  background-repeat: repeat;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  color: $color-dark-gold;
+  text-decoration: none;
+}
 
 h1 {
   font-family: "Julius Sans One", sans-serif;
   color: $color-dark-gold;
   font-size: 55px;
-  margin-bottom: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
   font-weight: 900;
 }
 
@@ -50,124 +57,119 @@ h3 {
 }
 
 h4 {
-    font-family: "Julius Sans One", sans-serif;
-    color: $color-gold;
-    font-size: 30px;
-    margin-bottom: 1em;
-  }
-  
+  font-family: "Julius Sans One", sans-serif;
+  color: $color-gold;
+  font-size: 28px;
+  margin-bottom: 1em;
+}
+
 h5 {
-    font-family: "Julius Sans One", sans-serif;
-    color: $color-gold;
-    font-size: 24px;
-    margin-bottom: 20px;
-    margin-bottom: 1em;
-  }
-
-  /* Header Style */
-
-  .logoElena {
-    width: 250px;
-  }
-  
-  .logoElenaMobile {
-    width: 150px;
-  }
-
- header {
-  box-shadow: 1px 20px 30px -20px rgba(0,0,0,0.8);
-  nav li {
-      margin: 0px 30px;
-&#activo{
-  margin-bottom: -1px;
-          border-bottom: solid 1px $color-gold;
+  font-family: "Julius Sans One", sans-serif;
+  color: $color-dark-gold;
+  font-size: 24px;
+  margin-bottom: 1em;
 }
 
-      &:hover {
-        margin-bottom: -1px;
-          border-bottom: solid 1px $color-gold;
-      }
-
-      a {
-          font-family: "Julius Sans One", sans-serif;
-          color: $color-beige !important;
-
-          &:hover {
-              color: $color-gold !important; 
-          }
-      } 
-  }
+.subtitle {
+  font-family: "Julius Sans One", sans-serif;
+  color: $color-tierra;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-bottom: 1em;
+  text-transform: uppercase;
 }
+
+hr {
+  border-bottom: 2px solid $color-tierra;
+  opacity: 1;
+  width: 40px;
+}
+
+@import "header";
+@import "footer";
 
 /* Home Slider */
 
 .homeSlider {
-  box-shadow: 1px 20px 30px -20px rgba(0,0,0,0.8);
+  box-shadow: 1px 20px 30px -20px rgba(0, 0, 0, 0.8);
+}
+
+#carouselExampleIndicators .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+  overflow: hidden;
 }
 
 /* Texto Bienvenida */
+
 .seccionBienvenida {
   flex: content;
   align-content: center;
-.bienvenida {
-padding: 2em;
-margin-bottom: 0;
-h2 {
-  text-align: center;
-  margin-bottom: 0.5em;
-}
-  p {
+
+  .bienvenida {
+    padding: 2em;
+    margin-bottom: 0;
     text-align: center;
-    font-size: 21px;
+
+    h2 {
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 21px;
+    }
   }
 }
-}
+
+.separadorBienvenida {
+width: 300px;
+} 
 
 /* Home Platos Destacados */
 
-.destacadosHome {
-margin-bottom: 3em;
-.platoDestacado {
-  background-color: $color-blanco;
-  padding: 3em;
+.tituloPlatos {
   text-align: center;
-  margin-bottom: 2em;
-  margin-top: 120px;
-  img {
-    margin-top: -120px;
-  }
-}
 }
 
-/* Footer */
-
-footer {
-  h5 {
-    margin-top: 5px;
-  }
-}
-
-.logoFooter {
-  width: 150px;
+.destacadosHome {
   margin-bottom: 3em;
-}
-
-
-.i-footer {
-  font-size: 2rem;
-  margin: 0px 5px;
-  color: $color-gold;
-  &:hover{
-    color: $color-blanco;
+  .platoDestacado {
+    background-color: $color-blanco;
+    padding: 3em;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 120px;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+      transition: all 0.5s ease-in-out;
+    }
+    img {
+      margin-top: -120px;
+    }
   }
 }
 
-.copyRight {
-  border-top: solid 1px $color-gold;
+.btn-outline-primary {
+  font-weight: 600;
+  color: $color-dark-gold;
+  border: solid 1px $color-dark-gold;
+  border-radius: 0px;
+  margin-top: 30px;
+  &:hover {
+    background-color: $color-dark-gold;
+    border: solid 1px $color-dark-gold;
+  }
 }
+
+
+/* Estilos Páginas Menu / Staff  */
 
 .menuImage {
-  width: 100%; 
+  width: 100%;
 }
 
 .menuFilas {
@@ -175,75 +177,74 @@ footer {
 }
 
 .menuColumnaImg {
-  background-image: url(../assets/menu-entrada.jpg);
+  background-image: url(../assets/menuEntrada.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   padding: 3em;
   min-height: 200px;
   width: 100%;
-} 
+}
 
 .menuColumnaImg1 {
-  background-image: url(../assets/menu-almuerzo.jpg);
+  background-image: url(../assets/menuAlmuerzo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   padding: 3em;
   min-height: 200px;
   width: 100%;
-} 
+}
 
 .menuColumnaImg2 {
-  background-image: url(../assets/menu-cena.jpg);
+  background-image: url(../assets/menuCena.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   padding: 3em;
   min-height: 200px;
   width: 100%;
-} 
+}
 
 .menuColumnaImg3 {
-  background-image: url(../assets/menu-postre.jpg);
+  background-image: url(../assets/menuPostre.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   padding: 3em;
   min-height: 200px;
   width: 100%;
-} 
-
+}
 
 .staffColumnaImg {
-  background-image: url(../assets/staff-chef-img.jpg);
+  background-image: url(../assets/staffChefImg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   padding: 3em;
   min-height: 400px;
   width: 100%;
-} 
+}
 
 .staffColumnaImg1 {
-  background-image: url(../assets/staff-equipo-img.jpg);
+  background-image: url(../assets/staffEquipoImg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   padding: 3em;
   min-height: 400px;
   width: 100%;
-} 
+}
 
 .staffColumnaImg2 {
-  background-image: url(../assets/staff-bar-img.jpg);
+  background-image: url(../assets/staffBarImg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   padding: 3em;
   min-height: 400px;
   width: 100%;
-} 
+}
 
 .menuColumnaTexto {
   background-color: $color-blanco;
@@ -251,58 +252,56 @@ footer {
   text-align: left;
 }
 
-  table {
-    width: 100%;
-    .tableHead {
-      font-weight: 600;
-      line-height: 3;
-    }
-    .precio {
-      width: 30%;
-    }
-    .tableColLfet  {
-      width: 70%;
-    }
+table {
+  width: 100%;
+  .tableHead {
+    font-weight: 600;
+    line-height: 3;
+  }
+  .precio {
+    width: 20%;
+  }
+  .tableColLfet {
+    width: 80%;
+  }
 }
 
-/* GRID - GALERIA */
-
+/* Estilos GRID - GALERIA */
 
 .galeriaPlatos {
   display: grid;
-  grid-template-columns: repeat(1,1fr);
-  grid-template-rows: repeat(12,1fr);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   grid-gap: 10px;
   margin: auto;
-  grid-template-areas: 
-"plato1" "plato2" "plato3" "plato4"  
-"plato5" "plato6" "plato7" "plato8"
-"plato9" "plato10" "plato11" "plato12";
+  grid-template-areas:
+    "plato1" "plato2" "plato3" "plato4"
+    "plato5" "plato6" "plato7" "plato8"
+    "plato9" "plato10" "plato11" "plato12";
 }
 
-.galeriaPlatos>img {
+.galeriaPlatos > img {
   width: 1fr;
   height: 1fr;
 }
 
 img.pl {
   width: 100%;
-}  
+}
 
 @media only screen and (min-width: 768px) {
-.galeriaPlatos {
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(6,1fr);
-}
+  .galeriaPlatos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-.galeriaPlatos {
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(4,1fr);
+  .galeriaPlatos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
-}
-
 
 /*Formulario Contacto*/
 
@@ -313,7 +312,6 @@ img.pl {
   flex-grow: 1;
   border-radius: 20px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-
 }
 
 .infoContainer {
@@ -323,7 +321,6 @@ img.pl {
   flex-grow: 2;
   border-radius: 20px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-  
 }
 
 .infoContacto {
@@ -359,10 +356,9 @@ img.pl {
   border-radius: 0;
   padding: 10px 50px;
   border-style: none;
-}
-
-.btn-enviar:hover {
-  background-color: $color-dark-gold;
+  &:hover {
+    background-color: $color-dark-gold;
+  }
 }
 
 textarea {
@@ -376,6 +372,19 @@ textarea {
 }
 
 .bulletsContacto {
-padding-top: 20px;
-padding-bottom: 20px;
-} 
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* ERROR 404*/
+
+.samurai {
+  margin-top: 3em;
+  width: 90%;
+}
+
+@media only screen and (min-width: 992px) {
+.samurai {
+  width: 50%;
+}
+}
